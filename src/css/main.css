@@ -1,0 +1,172 @@
+
+
+.navigation {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navigation ul {
+    padding: .6em;
+    width: 15%;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btn-checkout input{
+    
+    height: 100%;
+    display: inline-block;
+    padding: .5em;
+    border-radius: .5em;
+    background-color: rgb(23, 160, 23);
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 1px 1px 15px black;
+    transition: ease-in 700ms;
+    border: 0px solid transparent;
+    font-weight: bold;
+    color: rgb(238, 232, 232);
+
+    
+}
+
+#btn-checkout {
+
+   
+}
+
+#btn-checkout input:hover {
+    transition: ease-out 700ms;
+    box-shadow: 1px 1px 25px black;
+    color: white;
+}
+
+
+#container-shopping {
+    margin-top: .3em;
+    padding: .1em;
+    border-radius: .5em;
+    background-color: tomato;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.navigation ul li i {
+    color: white;
+    font-weight: bolder;
+    padding: .2em;
+    font-size: 1.3em;
+}
+
+.catalogo h1 {
+    text-align: center;
+}
+
+.nav-catalogo {
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+}
+
+.nav-catalogo ul {
+    width: 20%;
+    margin: .7em auto;
+    display:  flex;
+    padding-left: 0;
+    list-style: none;
+    justify-content: space-between;
+
+}
+
+
+.nav-catalogo ul li button  {
+    padding: 1em;
+    border: 0;
+    font-size: 1em;
+    border-bottom: 2px orange solid;
+    cursor: pointer;
+}
+
+
+.nav-catalogo ul li button:hover  {
+    transition: ease-in 300ms;
+    color: white;
+    background-color: rgb(170, 166, 166);
+}
+
+
+.nav-catalogo ul li button {
+    background-color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.container-product {
+
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    max-width: 70%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+
+
+.container-product article {
+    margin-bottom: 1em;
+    background-color: white;
+    display: flex;
+    flex-direction:column;
+    max-width: 30%;
+    align-items: center;
+    border: 1px rgb(252, 242, 242) solid;
+    border-radius: .8em;
+    padding: .7em;
+    box-shadow: 1px 3px 13px black;
+    justify-content: space-between;
+   
+
+
+}
+
+.container-product article img {
+
+    width: 40%;
+    height: auto;
+    
+
+}
+
+ 
+.container-product article div {
+    padding: .5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.container-product article div button{
+   border-radius: .5em;
+   border: 0px;
+   padding: .8em;
+   color: white;
+   font-size: .9em;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+#btn-rmv-prod {
+    background-color: rgba(236, 11, 11, 0.781);
+}
+
+#btn-add-prod {
+    background-color: rgb(0, 119, 255);
+}

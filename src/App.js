@@ -1,23 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+
+import Catalogue from "./components/Catalogue";
+import CheckOutComponent from "./components/Checkout";
 
 function App() {
+  let [num, setNum] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+
+        <Router>
+          <nav className="navigation">
+            <ul>
+            <li id="btn-checkout">
+                <Link to="/Catalogue">
+                  <input type="button" value="Catalogue" />{" "}
+                </Link>
+              </li>
+              <li id="btn-checkout">
+                <Link to="/checkout">
+                  <input type="button" value="Checkout" />{" "}
+                </Link>
+              </li>
+
+              <li id="container-shopping">
+                {num}
+                <i class="fas fa-shopping-cart"></i>
+              </li>
+            </ul>
+          </nav>
+
+          <Switch>
+            <Route path="/checkout">
+              <CheckOutComponent />
+            </Route>
+
+            <Route path="/Catalogue">
+              <Catalogue num={num} notyfy={setNum} />
+            </Route>
+          </Switch>
+
+
+        </Router>
+        
+
       </header>
+
+     
     </div>
   );
 }
